@@ -114,19 +114,19 @@ void get_acc(float* data) {
 		 data[Z]=(float) (tmp[Z]- acc_base[Z]) / 16384.0;
 	}
 	if(ACCELEROMETER_RANGE == ACCELEROMETER_RANGE_4G) {
-        data[X]=(float) (tmp[X]- acc_base[X]) / 8192.0;
-        data[Y]=(float) (tmp[Y]- acc_base[Y]) / 8192.0;
-        data[Z]=(float) (tmp[Z]- acc_base[Z]) / 8192.0;
+        	data[X]=(float) (tmp[X]- acc_base[X]) / 8192.0;
+	 	data[Y]=(float) (tmp[Y]- acc_base[Y]) / 8192.0;
+		data[Z]=(float) (tmp[Z]- acc_base[Z]) / 8192.0;
 	}
 	if(ACCELEROMETER_RANGE == ACCELEROMETER_RANGE_8G) {
-        data[X]=(float) (tmp[X]- acc_base[X]) / 4096.0;
-        data[Y]=(float) (tmp[Y]- acc_base[Y]) / 4096.0;
-        data[Z]=(float) (tmp[Z]- acc_base[Z]) / 4096.0;
+ 		data[X]=(float) (tmp[X]- acc_base[X]) / 4096.0;
+        	data[Y]=(float) (tmp[Y]- acc_base[Y]) / 4096.0;
+        	data[Z]=(float) (tmp[Z]- acc_base[Z]) / 4096.0;
 	}
 	if(ACCELEROMETER_RANGE == ACCELEROMETER_RANGE_16G) {
-        data[X]=(float) (tmp[X]- acc_base[X]) / 2048.0;
-        data[Y]=(float) (tmp[Y]- acc_base[Y]) / 2048.0;
-        data[Z]=(float) (tmp[Z]- acc_base[Z]) / 2048.0;
+        	data[X]=(float) (tmp[X]- acc_base[X]) / 2048.0;
+        	data[Y]=(float) (tmp[Y]- acc_base[Y]) / 2048.0;
+        	data[Z]=(float) (tmp[Z]- acc_base[Z]) / 2048.0;
 	}	
 }
 
@@ -153,24 +153,24 @@ void get_gyro(float* data) {
 	get_gyro_raw(tmp);
 	
 	if(GYROSCOPE_RANGE == GYROSCOPE_RANGE_250) {
-        data[X]=(float) (tmp[X] - gyro_base[X]) / 131;
-        data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 131;
-        data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 131;
+        	data[X]=(float) (tmp[X] - gyro_base[X]) / 131;
+        	data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 131;
+        	data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 131;
 	}
 	if(GYROSCOPE_RANGE == GYROSCOPE_RANGE_500) {
-        data[X]=(float) (tmp[X] - gyro_base[X]) / 65.5;
-        data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 65.5;
-        data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 65.5;
+        	data[X]=(float) (tmp[X] - gyro_base[X]) / 65.5;
+        	data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 65.5;
+        	data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 65.5;
 	}
 	if(GYROSCOPE_RANGE == GYROSCOPE_RANGE_1000) {
-        data[X]=(float) (tmp[X] - gyro_base[X]) / 32.8;
-        data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 32.8;
-        data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 32.8;
+        	data[X]=(float) (tmp[X] - gyro_base[X]) / 32.8;
+        	data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 32.8;
+        	data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 32.8;
 	}
 	if(GYROSCOPE_RANGE == GYROSCOPE_RANGE_2000) {
-        data[X]=(float) (tmp[X] - gyro_base[X]) / 16.4;
-        data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 16.4;
-        data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 16.4;
+        	data[X]=(float) (tmp[X] - gyro_base[X]) / 16.4;
+        	data[Y]=(float) (tmp[Y] - gyro_base[Y]) / 16.4;
+        	data[Z]=(float) (tmp[Z] - gyro_base[Z]) / 16.4;
 	}
 }
 
