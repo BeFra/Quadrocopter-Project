@@ -19,14 +19,12 @@ int main(void)
 	// set for 16 MHz clock, and turn on the LED
 	CPU_PRESCALE(0);
 
-
 	/* initialize the USB, and then wait for the host
 	 to set configuration.  If the Teensy is powered
 	 without a PC connected to the USB port, this 
 	 will wait forever.*/
 	usb_init();
 	while (!usb_configured()) /* wait */ ;
-	
 	
 	init_timer();
 
@@ -42,15 +40,17 @@ int main(void)
 	
 	init_sensor();
 		
-
 	float temperature = get_temperature();
 	get_gyro(gyro);
 	get_acc(acc);
-	get_angles();
+	
 	//print_sensor_Data(gyro,acc,temperature);
-	usb_debug_flush_output();
-
-	 return 0;
+	while(1) {
+		get_angles();
+		usb_debug_flush_output();
+		_delay_ms(10);
+	}
+	return 0;
 }
 
 
