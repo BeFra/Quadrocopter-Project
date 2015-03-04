@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * sensor.c
  *
@@ -294,3 +295,4 @@ inline unsigned long get_last_time() {return timeStamp;}
 inline float get_last_filtert_x_angle() {return last_filtert_analge_x;}
 inline float get_last_filtert_y_angle() {return last_filtert_analge_y;}
 inline float get_last_filtert_z_angle() {return last_filtert_analge_z;}
+
