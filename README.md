@@ -1,6 +1,6 @@
 # Quadrocopter-Project
 Status:
-sensor.c TODO: angle calculation 
+
 
 
 This is just a quadrocopter project based on a Atmega32u4.
